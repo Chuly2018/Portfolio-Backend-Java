@@ -8,6 +8,9 @@ import javax.persistence.Id;
 import javax.validation.constraints.NotNull;
 import com.proyecto.Portfolio.security.enums.RolNombre;
 
+import javax.persistence.Entity;
+
+@Entity
 public class Rol {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

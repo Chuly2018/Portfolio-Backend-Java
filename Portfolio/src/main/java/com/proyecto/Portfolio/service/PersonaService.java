@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 @Transactional
-public class PersonaService {
+public class PersonaService implements IPersonaService {
     
     @Autowired
     public PersonaRepository persoRepo;
@@ -55,6 +55,21 @@ public class PersonaService {
     
     public boolean existsByNombre(String nombre) {
         return persoRepo.existsByNombre(nombre);
+    }
+
+    @Override
+    public List<Persona> verPersonas() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public void borrarPersona(Long id) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    @Override
+    public Persona buscarPersona(Long id) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
 }

@@ -8,10 +8,6 @@ import com.proyecto.Portfolio.security.entity.Rol;
 import com.proyecto.Portfolio.security.enums.RolNombre;
 import com.proyecto.Portfolio.security.repository.RolRepository;
 
-/**
- *
- * @author chuly
- */
 @Service
 @Transactional
 public class RolService {
